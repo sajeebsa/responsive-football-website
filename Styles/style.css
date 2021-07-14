@@ -1,0 +1,186 @@
+/*-------- fonts------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*----- common styles----- */
+body{
+    font-family:  'Poppins', sans-serif;
+    margin: 0;
+} 
+
+
+/* header styles */
+
+header section{
+    display: flex;
+    justify-content: space-between;
+    background-color:#2D25A0;
+    height: 677px;
+    width: 100%;
+}
+header div img{
+    width: 557px;
+    height:438px ;
+    padding-right: 141px;
+    padding-top: 153px;
+    }
+#header-title{
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: bold;
+    color:  #FFFFFF;
+    padding-left: 156px;
+    padding-top: 207px;
+    margin-bottom: 240px;
+    }
+ .btn{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border:none ;
+
+    }
+    .btn a{
+        text-decoration: none;
+        font-size: 16px;
+        color: 
+        #FFFFFF;
+        
+
+    }
+
+    /*------ Animation style------- */
+
+    header img:hover{
+        width: 700px;
+        height: 500px;
+        transition: width 2s, height 2s, transform 3s;
+        transform: rotate(45deg);
+
+    }
+    header section:hover{
+        height: 800px;
+    }
+ 
+
+
+   
+
+
+/*--------- player styles--------- */
+
+.container{
+    background-color: #FFFFFF;
+    
+}
+
+.container .player-img img{
+    width: 100%;
+    height: 256px;
+    }
+.container .player{
+    width: 330px;
+    height: 474px;
+    margin-left: 30px;
+    margin-top: 27px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 33px;
+    padding-left: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:0px;
+    margin-left: 180px;
+    margin-right: 210px;
+    margin-top: 60px;
+    margin-bottom: 165px;
+    }
+    
+    .player-info{
+        margin-top:-16px ;
+    }
+    .player-title{
+        font-size: 28px;
+        color: #18191F;
+      
+    }
+
+    .player-content{
+        color: #6C6C6C;
+        margin-top: -16px;
+       
+
+    }
+
+ /*--------- review area-----------  */
+
+ #review-area{
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 158px;
+     
+ }
+ .review-style{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+ }
+        
+
+/*----------- footer styles----------- */
+#footer-section{
+    text-align: center;
+    margin-bottom: 63px ;
+}
+#footer-image img{
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+#social-icons{
+  margin-bottom:20px ;
+  width: 170px;
+}
+.social{
+    margin-bottom:20px ;
+}
+
+
+/* --------Media Queries-------- */
+
+/* mobile devices
+----------------- */
+
+@media only screen and (max-width:688px ) { .container{
+    width: 100%;
+}
+    .players, .header, .footer-section {background-color: red;
+     grid-template-columns: repeat(1,1fr);}
+     .player, .header, .footer-section{
+         flex-direction: column;
+     }
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+          width: 100%;   
+    }
+    .players{
+        background-color: yellowgreen;
+        grid-template-columns:repeat(2,1fr) ;
+        
+    }
+}
+
+     
+    
+    
+    
+
+    
+    
